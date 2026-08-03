@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import tailwind from '@tailwindcss/vite'
+const { defineConfig } = require('vite')
 
-export default defineConfig({
-  plugins: [
-    tailwind(),
-  ],
+module.exports = defineConfig({
+  server: {
+    host: '0.0.0.0',
+    port: 4173,
+  },
 })
