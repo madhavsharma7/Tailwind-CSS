@@ -43,4 +43,9 @@
     width: 100px;
     height: 100px;
   }
+
+  /* for directives */
+  h1 {
+    font-size: 6vw;
+  }
 }
