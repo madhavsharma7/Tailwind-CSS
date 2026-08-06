@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --breakpoint-sm: 700px;
   --breakpoint-md: 900px;
   --breakpoint-lg: 1000px;
   --breakpoint-xl: 1300px;
 }
+
+/* Custom Utilities */
 
 /* @layer utilities {
   .padding-c-50 {
@@ -66,8 +69,39 @@
 
 /* Through Base layer using Tailwind CSS */
 
-@layer base {
+/* @layer base {
+
   h1 {
     @apply text-2xl;
   }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-4xl;
+  }
+
+  h4 {
+    @apply text-5xl;
+  }
+
+  button {
+    @apply border;
+    @apply border-gray-500;
+  } */
+
+/* Custom Utilities Components for custom classes */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 rounded p-2 text-white hover:bg-blue-300 hover:text-black flex mt-5;
+  }
+}
+
+.btn-testing {
+  background-color: #0077b6;
+  color:white;
+  padding: 10px;
+  margin-top: 10px;
 }
