@@ -93,7 +93,7 @@
   } */
 
 /* Custom Utilities Components for custom classes */
-@layer components {
+/* @layer components {
   .btn-primary {
     @apply bg-blue-500 rounded p-2 text-white hover:bg-blue-300 hover:text-black flex mt-5;
   }
@@ -104,4 +104,17 @@
   color:white;
   padding: 10px;
   margin-top: 10px;
+} */
+
+/* for Buttons Design.html */
+
+
+@layer components {
+  .btn {
+    @apply p-2 rounded border border-black p-2;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white   
+  }
 }
