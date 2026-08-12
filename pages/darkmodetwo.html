@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" id="root" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode With Button</title>
+
+    <!-- Change this path if your output.css is in another folder -->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <script>
+      // function changeMode() {
+      //   // alert("Button Clicked");
+      //   let el = document.getElementById("root");
+      //   if (el == "dark") {
+      //     document.getElementById("root").className = "light";
+      //   } else {
+      //     document.getElementById("root").className = "dark";
+      //   }
+      // }
+      function changeMode() {
+        const html = document.getElementById("root");
+        const btn = document.getElementById("selectMode");
+
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
+          btn.innerText = "Apply Dark Mode";
+        } else {
+          html.classList.add("dark");
+          btn.innerText = "Apply Light Mode";
+        }
+      }
+    </script>
+  </head>
+
+  <body
+    class="bg-white text-black transition-colors duration-300 dark:bg-slate-500"
+  >
+    <!-- Button for dark mode  -->
+    <button
+      id="selectMode"
+      class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 m-10 dark:bg-white dark:text-black"
+      onclick="changeMode()"
+    >
+      Apply Light Mode
+    </button>
+
+    <div class="p-10">
+      <h1 class="text-5xl font-bold text-black dark:text-white">
+        Dark Mode Test
+      </h1>
+
+      <p class="mt-4 text-xl text-gray-700 dark:text-gray-300">
+        This text stays in dark mode because the
+        <code>dark</code> class is added to the html tag.
+      </p>
+
+      <div
+        class="mt-10 flex items-center gap-4 rounded-lg border border-blue-300 p-5 dark:border-red-500 dark:bg-slate-700"
+      >
+        <div class="size-12 rounded bg-yellow-500"></div>
+
+        <p class="text-2xl text-black dark:text-white">Box with Tailwind CSS</p>
+      </div>
+    </div>
+  </body>
+</html>

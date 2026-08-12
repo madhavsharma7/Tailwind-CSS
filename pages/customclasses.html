@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Css/output.css" />
+  </head>
+  <body>
+    <!-- for custom classes we have to use layer directives  -->
+
+    <div class="m-10">
+      <!-- Same as core css but with custom classes and in this button we have so many classes like bg textcolor hover so we declare a class for the same  using component directives -->
+
+      <button
+        class="bg-blue-500 rounded p-2 text-white hover:bg-blue-300 hover:text-black"
+      >
+        For Custom Class
+      </button>
+      <h1>Through Custom Classes</h1>
+      <button class="btn-primary">For Custom Class 1</button>
+      <button class="btn-primary">For Custom Class 2</button>
+
+      <button class="btn-primary">For Custom Class 3</button>
+
+      <!-- We can do this from a core css class also like this -->
+
+      <h1>Through core css classes</h1>
+      <button class="btn-testing">For Custom Class 4</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --breakpoint-sm: 700px;
+  --breakpoint-md: 900px;
+  --breakpoint-lg: 1000px;
+  --breakpoint-xl: 1300px;
+}
+
+/* Custom Utilities */
+
+/* @layer utilities {
+  .padding-c-50 {
+    padding: 50px;
+  }
+
+  .padding-wrapper {
+    padding: 10px;
+  }
+
+  .margin-20 {
+    margin: 20px;
+  }
+
+  .margin-c-50 {
+    margin: 50px;
+  }
+
+  .height-1 {
+    height: 100px;
+  }
+
+  .width-1 {
+    width: 100px;
+  }
+
+  .size-fixed {
+    width: 100px;
+    height: 100px;
+  }
+
+  .size-c-100 {
+    width: 100px;
+    height: 100px;
+  } */
+
+/* for directives */
+/* h1 {
+  font-size: 6vw;
+} */
+
+
+/* For Base Layer */
+/* @layer base {
+
+  /* As normal CSS */
+/* h1 {
+    font-size: 3.5vw
+  }
+
+  button {
+    font-size: 2vw;
+  }
+
+}  */
+
+/* Through Base layer using Tailwind CSS */
+
+/* @layer base {
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-4xl;
+  }
+
+  h4 {
+    @apply text-5xl;
+  }
+
+  button {
+    @apply border;
+    @apply border-gray-500;
+  } */
+
+/* Custom Utilities Components for custom classes */
+/* @layer components {
+  .btn-primary {
+    @apply bg-blue-500 rounded p-2 text-white hover:bg-blue-300 hover:text-black flex mt-5;
+  }
+}
+
+.btn-testing {
+  background-color: #0077b6;
+  color:white;
+  padding: 10px;
+  margin-top: 10px;
+} */
+
+/* for Buttons Design.html */
+
+/* @layer components {
+  .btn {
+    @apply p-2 rounded border border-white;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white p-3 rounded-md border border-white;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-500 text-white p-3 rounded-md border border-white;
+  }
+
+  .btn-success {
+    @apply bg-green-600 text-white p-3 rounded-md border border-white;
+  }
+
+
+  .btn-danger {
+    @apply bg-red-600 text-white p-3 rounded-md border border-white;
+  }
+
+
+  .btn-warning {
+    @apply bg-yellow-400 p-3 rounded-md border border-white;
+  }
+
+  .btn-info {
+    @apply bg-sky-300 p-3 rounded-md border border-white;
+  }
+
+  .btn-light {
+    @apply bg-gray-100 p-3 rounded-md border border-white;
+  }
+
+  .btn-dark {
+    @apply bg-black text-white p-3 rounded-md border border-white;
+  }
+
+  .btn-link {
+    @apply text-blue-600 p-3 underline;
+  }
+} */
+/* Now we have to use functions through config file we have to define spacing in extend */
+
+/* .function {
+  @apply bg-green-500;
+  background-color: green;
+  height: theme("spacing.200");
+} */
+
+@layer components {
+  .function {
+    @apply bg-green-500;
+    height: theme('spacing.200');
+
+  }
+}
