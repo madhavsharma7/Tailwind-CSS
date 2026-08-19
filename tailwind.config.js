@@ -4,6 +4,9 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Bebas Neue", "sans-serif"],
+      },
       spacing: {
         200: "20px",
       },

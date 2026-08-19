@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Css/output.css"/>
+  </head>
+  <body>
+    <!-- Flex flex-wrap for grid -->
+    <div class="container mx-auto mt-2 flex flex-wrap gap-3">
+      <!-- So now we have to add these classes to all the img for changes instead we can make a custom classes -->
+      <img
+        class="max-w-80 hover:scale-125 transition duration-1000 rounded hover:brightness-125"
+        src="./monkey.jpg"
+        alt=""
+      />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+      <img class="w-80 img-primary" src="./monkey.jpg" alt="" />
+    </div>
+  </body>
+</html>

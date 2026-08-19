@@ -160,31 +160,37 @@
   height: theme("spacing.200");
 } */
 
-@layer components {
+/* @layer components {
   .function {
     @apply bg-green-500;
     height: theme('spacing.200');
   }
 
-}
+} */
 
 @layer utilities {
   /* Default: below 600px show white background */
-  body {
+  /* body {
     background-color: #ffffff;
-  }
+  } */
 
   /* Strong override for <600px in case utilities/classes override our default */
-  @media screen and (max-width: 599px) {
+  /* @media screen and (max-width: 599px) {
     body {
       background-color: #ffffff !important;
     }
-  }
+  } */
 
-  @media screen and (min-width: 600px) {
-    /* At 600px and above, make body pink */
-    body {
+  /* @media screen and (min-width: 600px) { */
+  /* At 600px and above, make body pink */
+  /* body {
       @apply bg-pink-500;
+    }
+  }  */
+
+  @layer components {
+    .img-primary {
+      @apply max-w-80 hover:scale-125 transition duration-1000 rounded hover:brightness-125;
     }
   }
 }
